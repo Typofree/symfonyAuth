@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Auth{% endblock %}
+
+{% block body %}
+    <h1>Create new Auth</h1>
+
+    {{ include('auth/_form.html.twig') }}
+
+    <a href="{{ path('app_auth_index') }}">back to list</a>
+{% endblock %}
